@@ -8,46 +8,56 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 30px;
 }
+
 p {
-    width: 300px;
-    height: 200px;
-    border: 1px solid black;
-    margin: 15px;
-    
-    background-color: gray;
-    
+   position: relative;
+   width: 90%;
+   font-size: 16px;
+   text-align: justify;
+   top: 40px;
+   left: 5%;
+   margin-top: 10px;
     
   }
-span {
+
+ span {
+  
     width: 80px;
-    height: 10px;
     border: 2px solid black;
-    padding: 20px 10px;
-    margin: 0 0 10px 10px;
-    position: relative;
-    top: 10;
-    float: right;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
     font-family: cursive;
     font-weight: bold;
     
   }
-  div#container {
+ 
+  #box-p1, #box-p2, #box-p3 {
     position: relative;
-   top: 30px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 15px;
+    background-color:#ccc;
+  }
+  div#container {
+   position: relative;
+   top: 20px;
    display: inline;
   }
 
-#p1 span {
+  #box-p1 span {
     background-color: rosybrown;
    
 }
 
-#p2 span {
+  #box-p2 span {
     background-color: red;
     
 }
 
-#p3 span {
+  #box-p3 span {
     background-color: bisque;
     
 }
