@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+div {
+  display: block;
+}
+#container {
+  width: 100%;
+  
+}
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,16 +42,20 @@ p {
  
   #box-p1, #box-p2, #box-p3 {
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 200px;
+    padding: 10px;
     border: 1px solid black;
     margin: 15px;
     background-color:#ccc;
+    display: inline-flex;
+    left:40px;
   }
   div#container {
    position: relative;
-   top: 20px;
+   top: 50px;
    display: inline;
+   
   }
 
   #box-p1 span {
@@ -60,4 +71,35 @@ p {
   #box-p3 span {
     background-color: bisque;
     
+}
+/* ----- Desktop ------ 
+@media (max-width: 992px){
+  #container {
+    width: 100%;
+    
+  }
+}*/
+/* ------ Tablet ------- 
+@media (max-width: 768px) and (min-width: 991px){
+  div#container {
+    display: inline-flex;
+    width: 100%;
+    
+   }
+   #box-p2 {
+    position: relative;
+    display: inline-block;
+    
+   }
+   #box-p3 {
+     width: 80%;
+     left: 30px;
+   }
+}*/
+/* ------- Mobile -------- 
+@media (max-width: 767px){
+   #container {
+    width: 100%;
+    
+  }*/
 }
